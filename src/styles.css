@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: inherit;
+  text-decoration: inherit;
+  font-family: "Poppins", sans-serif !important;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+*::-webkit-scrollbar-thumb:active {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.input {
+  width: "100%";
+}
+
+.offscreen {
+  display: none;
+}
+
+.input-message {
+  color: red;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-color {
+  color: red;
+}
+.success-color {
+  color: green;
+}
+
+.message {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: red;
+}
+.dnone {
+  display: none !important;
+}
+.card {
+  min-width: 600px;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    min-width: 100vw !important;
+    padding: 10px !important;
+    margin: 0 !important;
+    min-height: 100vh;
+  }
+}
